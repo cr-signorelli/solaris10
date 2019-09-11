@@ -1,5 +1,8 @@
-SWAP = 10GB
-MEM = 28GB
+# How to check the memory cache consume
+
+## Server specification for this examples
+### SWAP memory = 10GB
+### Physical memory = 28GB
 
 -bash-3.2# uname -a
 SunOS SERVERTEST 5.10 Generic_150400-62 sun4v sparc sun4v
