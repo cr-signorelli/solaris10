@@ -19,7 +19,7 @@ foo@bar:~$ whoami
 foo
 ```
 
-```bash
+```sh
 foo@bar:~$ whoami
 foo
 ```
