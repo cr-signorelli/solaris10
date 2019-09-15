@@ -46,19 +46,3 @@ Free (cachelist)          3210840             25084   87%
 Free (freelist)              7914                61    0%
 Total                     3670016             28672
 ```
-**Command applied in a system with ZFS**
-```shellscript
--bash-3.2# echo "::memstat" | mdb "-k"
-Page Summary                            Pages             Bytes  %Tot
----------------------------- ----------------  ----------------  ----
-Kernel                                1627698             12.4G    5%
-Defdump prealloc                       418625              3.1G    1%
-ZFS                                  23569062            179.8G   71%
-Anon                                   330673              2.5G    1%
-Exec and libs                            3159             24.6M    0%
-Page cache                             549896              4.1G    2%
-Retired                                     4               32k    0%
-Free (cachelist)                       319252              2.4G    1%
-Free (freelist)                       6506687             49.6G   20%
-Total                                33325056            254.2G
-```
