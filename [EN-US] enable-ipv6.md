@@ -12,6 +12,10 @@
 ```console
 -bash-3.2# ifconfig inet6 <interface> plumb up
 ```
+```console
+foo@bar:~$ whoami
+foo
+```
 **Example**
 ```sh
 -bash-3.2# ifconfig inet6 bge1 plumb up
