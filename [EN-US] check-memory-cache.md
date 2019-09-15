@@ -1,8 +1,12 @@
 # How to check the memory cache consume
 
+---
+
 **Server specification for this examples**
 - Swap memory = 10GB 
 - Physical memory = 28GB 
+
+---
 
 **Command to identify hostname, solaris version, kernel version, and architecture**
 ```shellscript
@@ -40,7 +44,7 @@ Exec and libs                2866                22    0%
 Page cache                 212380              1659    6%
 Free (cachelist)          3210840             25084   87%
 Free (freelist)              7914                61    0%
-Total                    3670016             28672
+Total                     3670016             28672
 ```
 **Command applied in a system with ZFS**
 ```shellscript
