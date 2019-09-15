@@ -1,15 +1,15 @@
-# how to check the memory cache consume
+# How to check the memory cache consume
 
-**server specification for this examples**
+**Server specification for this examples**
 - Swap memory = 10GB 
 - Physical memory = 28GB 
 
-**Command**
+**Command to identify hostname, solaris version, kernel version, and architecture**
 ```shellscript
 -bash-3.2# uname -a
 SunOS SERVERTEST 5.10 Generic_150400-62 sun4v sparc sun4v
 ```
-
+**Differents commands to display swap memory**
 ```shellscript
 -bash-3.2# swap -s
 total: 87832k bytes allocated + 3952k reserved = 91784k used, 33816648k available
