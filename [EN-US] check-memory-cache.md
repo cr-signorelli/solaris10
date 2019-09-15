@@ -12,12 +12,15 @@
 ```shellscript
 -bash-3.2# uname -a
 ```
-```shellscript
+**Result**
+```console
 SunOS SERVERTEST 5.10 Generic_150400-62 sun4v sparc sun4v
 ```
 **Differents commands to display swap memory**
 ```shellscript
 -bash-3.2# swap -s
+```
+```console
 total: 87832k bytes allocated + 3952k reserved = 91784k used, 33816648k available
 ```
 
