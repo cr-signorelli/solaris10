@@ -1,7 +1,8 @@
 # Reserved IP addresses for use in documentation
 
-**
-https://en.wikipedia.org/wiki/Reserved_IP_addresses
+**Link to the Wikipedia**
+- <a href="https://en.wikipedia.org/wiki/Reserved_IP_addresses" target="_blank">`https://en.wikipedia.org/wiki/Reserved_IP_addresses`</a> 
+
 
 192.0.2.0/24     192.0.2.0 – 192.0.2.255                              256   Documentation Assigned as "TEST-NET-1" for use in documentation and examples. It should not be used publicly.
 198.51.100.0/24  198.51.100.0 – 198.51.100.255                        256   Documentation Assigned as "TEST-NET-2" for use in documentation and examples. It should not be used publicly.
