@@ -16,19 +16,19 @@
 
 ---
 
-**Create a tunnel interface**
+**Create a tunnel interface:**
 ```console
 -bash-3.2# ifconfig ip.tun0 plumb 
 ```
 
 ---
 
-**Command syntax**
+**Command syntax:**
 ```console
 -bash-3.2# ifconfig ip.tun0 <IP_TUNNEL_SRC> <IP_TUNNEL_DST> tsrc <IP_INTERFACE_SRC> tdst <IP_INTERFACE_DST> up
 ```
 
-**Understanding the options**
+**Understanding the options:**
 - <IP_TUNNEL_SRC> - Non-routing IP of the source tunnel
 - <IP_TUNNEL_DST> - Non-routing IP of the destination tunnel
 - <IP_INTERFACE_SRC> - IP from source interface which we use to encapsulate the traffic
@@ -36,35 +36,35 @@
 
 ---
  
-**Add a route**
+**Add a route:**
 ```console
 -bash-3.2# route add <NETWORK_ON_TUNNER> <IP_TUNNEL_DST>
 ```
 
-**Understanding the options**
+**Understanding the options:**
 - <NETWORK_ON_TUNNER> - IP address of the network you want to access through the tunnel
 - <IP_TUNNEL_DST> - Non-routing IP of the destination tunnel
 
 ---
 
-**Add network to the firewall**
+**Add network to the firewall:**
 ```console
 pass in from <IP_INTERFACE_DST> to any
 pass out from any to <IP_INTERFACE_DST>
 ```
 
-**Firewall**
+**Firewall:**
 ```console
 pass in from 192.159.205.12 to any
 pass out from any to 192.159.205.12
 ```
 
-**Understanding the options**
+**Understanding the options:**
 - <IP_INTERFACE_DST> - IP from destination interface which we use to unencapsulate the traffic
 
 ---
 
-**Commands**
+**Commands:**
 ```console
 -bash-3.2# ifconfig ip.tun0 192.168.70.2 192.168.70.1 tsrc 192.234.0.23 tdst 192.159.205.12 up
 -bash-3.2# route add 10.137.0.0/17 192.168.70.1
