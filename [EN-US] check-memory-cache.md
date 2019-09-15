@@ -1,7 +1,8 @@
 # How to check the memory cache consume
-#### Server specification for this examples
-SWAP memory = 10GB
-Physical memory = 28GB
+
+## Server specification for this examples
+- Swap memory = 10GB 
+- Physical memory = 28GB 
 
 
 ```shellscript
