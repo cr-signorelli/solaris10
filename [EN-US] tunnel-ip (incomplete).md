@@ -4,7 +4,6 @@
 
 - <a href="http://docs.oracle.com/cd/E19253-01/816-5166/6mbb1kq31/" target="_blank">`Reference documentation`</a> 
 
-
 ---
 
 **Specification for this examples**
@@ -18,14 +17,14 @@
 ---
 
 **Create a tunnel interface**
-```bash
+```console
 -bash-3.2# ifconfig ip.tun0 plumb 
 ```
 
 ---
 
 **Command syntax**
-```bash
+```console
 -bash-3.2# ifconfig ip.tun0 <IP_TUNNEL_SRC> <IP_TUNNEL_DST> tsrc <IP_INTERFACE_SRC> tdst <IP_INTERFACE_DST> up
 ```
 
@@ -38,7 +37,7 @@
 ---
  
 **Add a route**
-```bash
+```console
 -bash-3.2# route add <NETWORK_ON_TUNNER> <IP_TUNNEL_DST>
 ```
 
@@ -66,7 +65,7 @@ pass out from any to 192.159.205.12
 ---
 
 **Commands**
-```bash
+```console
 -bash-3.2# ifconfig ip.tun0 192.168.70.2 192.168.70.1 tsrc 192.234.0.23 tdst 192.159.205.12 up
 -bash-3.2# route add 10.137.0.0/17 192.168.70.1
 ```
