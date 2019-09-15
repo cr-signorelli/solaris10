@@ -13,13 +13,21 @@
 -bash-3.2# ifconfig inet6 <interface> plumb up
 -bash-3.2#
 ```
+
 ```console
 foo@bar:~$ whoami
 foo
 ```
+
+```bash
+foo@bar:~$ whoami
+foo
+```
+
 ```{r, engine='bash', count_lines}
 wc -l en_US.twitter.txt 
 ```
+
 **Example**
 ```sh
 -bash-3.2# ifconfig inet6 bge1 plumb up
