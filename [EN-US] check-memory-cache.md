@@ -29,6 +29,7 @@ swapfile             dev  swaplo blocks   free
  1 0 0 33815328 25780520 30 332 28 0 0 0 0  0  0  0  0 1168 1232 1033  0  0 100
 ```
 
+**Command applied in a file system UFS**
 ```shellscript
 -bash-3.2# echo "::memstat" | mdb -k
 Page Summary                Pages                MB  %Tot
@@ -41,10 +42,9 @@ Free (cachelist)          3210840             25084   87%
 Free (freelist)              7914                61    0%
 Total                    3670016             28672
 ```
-
-
-
-root@SERVERTEST:~# echo "::memstat" | mdb "-k"
+**Command applied in a system with ZFS**
+```shellscript
+-bash-3.2# echo "::memstat" | mdb "-k"
 Page Summary                            Pages             Bytes  %Tot
 ---------------------------- ----------------  ----------------  ----
 Kernel                                1627698             12.4G    5%
@@ -57,4 +57,4 @@ Retired                                     4               32k    0%
 Free (cachelist)                       319252              2.4G    1%
 Free (freelist)                       6506687             49.6G   20%
 Total                                33325056            254.2G
-
+```
