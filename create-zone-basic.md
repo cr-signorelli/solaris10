@@ -22,7 +22,7 @@
 ---
 
 **Inside do console zone configuration**
-```console
+```bash
 create
 set zonepath=/export/zones
 set autoboot=true
