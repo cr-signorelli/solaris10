@@ -1,4 +1,12 @@
 # How to enable interface IPv6 on Solaris10-SPARC
+---
+
+**Server specification for this examples**
+- bge1 = physical network interface 
+- 2001:db8:1234:0:0:0:0:100/128 = interface ip address 
+- 2001:db8:1234:0:0:0:0:1 = default gateway 
+
+---
 
 **Enable the interface**
 ```shellscript
@@ -13,17 +21,15 @@ ifconfig inet6 bge1 plumb up
 ```shellscript
 ifconfig <interface> inet6 <endereco_ipv6>/<mascara> up
 ```
-
 **Example**
 ```shellscript
-ifconfig bge1 inet6 addif 2001:db8:1234:0:0:0:0:100/32 up
+ifconfig bge1 inet6 addif 2001:db8:1234:0:0:0:0:100/128 up
 ```
 
 **Adding a static route**
 ```shellscript
 route -p add -inet6 default <gateway_ipv6>
 ```
-
 **Example**
 ```shellscript
 route -p add -inet6 default 2001:db8:1234:0:0:0:0:1
@@ -33,18 +39,16 @@ route -p add -inet6 default 2001:db8:1234:0:0:0:0:1
 ```shellscript
 echo "addif <endereco_ipv6>/<mascara> up" > /etc/hostname6.<interface>
 ```
-
 **Example**
 ```shellscript
-echo "addif 2001:db8:1234:0:0:0:0:100/32 up" > /etc/hostname6.bge1
+echo "addif 2001:db8:1234:0:0:0:0:100/128 up" > /etc/hostname6.bge1
 ```
 
 **Adjust files permissions**
 ```shellscript
 chmod 644 /etc/hostname.<interface>
 ```
-
-**Examplo**
+**Example**
 ```shellscript
 chmod 644 /etc/hostname.bge1
 ```
