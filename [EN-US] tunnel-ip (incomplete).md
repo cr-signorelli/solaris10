@@ -6,7 +6,7 @@
 
 ---
 
-**Specification for this examples**
+**Specification for this examples:**
 
 - Network to reach on another machine: 10.137.0.0/17
 - Another side IP tunnel: 192.168.70.1/30
