@@ -1,10 +1,10 @@
-# How to check the memory cache consume
+# how to check the memory cache consume
 
-## Server specification for this examples
+**server specification for this examples**
 - Swap memory = 10GB 
 - Physical memory = 28GB 
 
-**command**
+**Command**
 ```shellscript
 -bash-3.2# uname -a
 SunOS SERVERTEST 5.10 Generic_150400-62 sun4v sparc sun4v
