@@ -32,14 +32,14 @@ rede para alcançar na outra maquina: 10.137.0.0/17
 ip do tunel da outra ponto: 192.168.70.1/30
 seu lado do tunel:192.168.70.2/30
 
-ip valido do outro lado: 200.159.205.12
-ip valido do seu lado: 179.234.0.23
+ip valido do outro lado: 192.159.205.12
+ip valido do seu lado: 192.234.0.23
 
 # Rede 
-ifconfig ip.tun0 192.168.70.2 192.168.70.1 tsrc 179.234.0.23 tdst 200.159.205.12 up
+ifconfig ip.tun0 192.168.70.2 192.168.70.1 tsrc 192.234.0.23 tdst 192.159.205.12 up
 route add 10.137.0.0/17 192.168.70.1
 
 # Firewall
-pass in from 200.159.205.12 to any
-pass out from any to 200.159.205.12
+pass in from 192.159.205.12 to any
+pass out from any to 192.159.205.12
 
