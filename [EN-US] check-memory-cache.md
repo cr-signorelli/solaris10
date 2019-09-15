@@ -2,7 +2,7 @@
 
 ---
 
-**Server specification for this examples**
+**Server specification for this examples:**
 - Swap memory = 10GB 
 - Physical memory = 28GB 
 
