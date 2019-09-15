@@ -17,6 +17,8 @@
 SunOS SERVERTEST 5.10 Generic_150400-62 sun4v sparc sun4v
 ```
 
+---
+
 **Differents commands to display swap memory**
 ```bash
 -bash-3.2# swap -s
@@ -25,6 +27,7 @@ SunOS SERVERTEST 5.10 Generic_150400-62 sun4v sparc sun4v
 ```bash
 total: 87832k bytes allocated + 3952k reserved = 91784k used, 33816648k available
 ```
+---
 
 ```bash
 -bash-3.2# swap -l
@@ -34,6 +37,7 @@ total: 87832k bytes allocated + 3952k reserved = 91784k used, 33816648k availabl
 swapfile             dev  swaplo blocks   free
 /dev/dsk/c0d0s1     100,1      16 20496368 20496368
 ```
+---
 
 ```bash
 -bash-3.2# vmstat 2 2
@@ -45,6 +49,8 @@ swapfile             dev  swaplo blocks   free
  0 0 0 33859920 26366728 46 411 9 1 1 0  0  0  0  0  0 1157  954 1030  0  0 100
  1 0 0 33815328 25780520 30 332 28 0 0 0 0  0  0  0  0 1168 1232 1033  0  0 100
 ```
+
+---
 
 **Command applied in a file system UFS**
 ```bash
