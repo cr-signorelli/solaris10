@@ -9,26 +9,10 @@
 ---
 
 **Enable the interface**
-```bash
+```shellscript
 -bash-3.2# ifconfig inet6 <interface> plumb up
--bash-3.2#
 ```
-
-```console
-foo@bar:~$ whoami
-foo
-```
-
-```sh
-foo@bar:~$ whoami
-foo
-```
-
-```{r, engine='bash', count_lines}
-wc -l en_US.twitter.txt 
-```
-
-**Example**
+**Enable the interface example**
 ```sh
 -bash-3.2# ifconfig inet6 bge1 plumb up
 ```
@@ -37,7 +21,7 @@ wc -l en_US.twitter.txt
 ```shellscript
 -bash-3.2# ifconfig <interface> inet6 <endereco_ipv6>/<mascara> up
 ```
-**Example**
+**Configure IP on interface example**
 ```shellscript
 -bash-3.2# ifconfig bge1 inet6 addif 2001:db8:1:0:0:0:0:100/128 up
 ```
@@ -46,7 +30,7 @@ wc -l en_US.twitter.txt
 ```shellscript
 -bash-3.2# route -p add -inet6 default <gateway_ipv6>
 ```
-**Example**
+**Adding a static route example**
 ```shellscript
 -bash-3.2# route -p add -inet6 default 2001:db8:1:0:0:0:0:1
 ```
