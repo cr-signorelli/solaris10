@@ -11,6 +11,7 @@
 **Enable the interface**
 ```console
 -bash-3.2# ifconfig inet6 <interface> plumb up
+-bash-3.2#
 ```
 ```console
 foo@bar:~$ whoami
