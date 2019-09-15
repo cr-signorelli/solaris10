@@ -1,14 +1,19 @@
-**Documents reference**
-http://docs.oracle.com/cd/E19253-01/816-5166/6mbb1kq31/
+# How to create a Tunnel IP
+
+**Link direct to the Oracle documentation**
+
+- <a href="http://docs.oracle.com/cd/E19253-01/816-5166/6mbb1kq31/" target="_blank">`Reference documentation`</a> 
+
 
 ---
 
-**Examples**
-- rede para alcançar na outra maquina: 10.137.0.0/17
-- ip do tunel da outra ponto: 192.168.70.1/30
-- seu lado do tunel:192.168.70.2/30
-- ip valido do outro lado: 192.159.205.12
-- ip valido do seu lado: 192.234.0.23
+**Specification for this examples**
+
+- Network to reach on another machine: 10.137.0.0/17
+- Another side IP tunnel: 192.168.70.1/30
+- Your side IP tunnel: 192.168.70.2/30
+- IP from another side: 192.159.205.12
+- IP from your side: 192.234.0.23
 
 ---
 
