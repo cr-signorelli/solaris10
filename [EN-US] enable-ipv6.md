@@ -8,7 +8,7 @@
 
 ---
 
-**Enable the interface":**
+**Enable the interface:**
 ```shellscript
 -bash-3.2# ifconfig inet6 <interface> plumb up
 ```
