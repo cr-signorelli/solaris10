@@ -11,6 +11,8 @@
 **Command to identify hostname, solaris version, kernel version, and architecture**
 ```shellscript
 -bash-3.2# uname -a
+```
+```shellscript
 SunOS SERVERTEST 5.10 Generic_150400-62 sun4v sparc sun4v
 ```
 **Differents commands to display swap memory**
