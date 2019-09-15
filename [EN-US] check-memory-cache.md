@@ -8,33 +8,33 @@
 
 ---
 
-**Command to identify hostname, Solaris version, kernel version, and architecture**
+**Command to identify hostname, Solaris version, kernel version, and architecture:**
 ```console
 -bash-3.2# uname -a
 ```
-**Expected outcome**
+**Expected outcome:**
 ```console
 SunOS SERVERTEST 5.10 Generic_150400-62 sun4v sparc sun4v
 ```
 
 ---
 
-**Different command to display swap memory**
+**Different command to display swap memory:**
 ```console
 -bash-3.2# swap -s
 ```
-**Expected outcome**
+**Expected outcome:**
 ```console
 total: 87832k bytes allocated + 3952k reserved = 91784k used, 33816648k available
 ```
 
 ---
 
-**Different command to display swap memory**
+**Different command to display swap memory:**
 ```console
 -bash-3.2# swap -l
 ```
-**Expected outcome**
+**Expected outcome:**
 ```console
 swapfile             dev  swaplo blocks   free
 /dev/dsk/c0d0s1     100,1      16 20496368 20496368
@@ -42,11 +42,11 @@ swapfile             dev  swaplo blocks   free
 
 ---
 
-**Different command to display swap memory**
+**Different command to display swap memory:**
 ```console
 -bash-3.2# vmstat 2 2
 ```
-**Expected outcome**
+**Expected outcome:**
 ```console
  kthr      memory            page            disk          faults      cpu
  r b w   swap  free  re  mf pi po fr de sr vc -- -- --   in   sy   cs us sy id
@@ -56,11 +56,11 @@ swapfile             dev  swaplo blocks   free
 
 ---
 
-**Command applied in a file system UFS**
+**Command applied in a file system UFS:**
 ```console
 -bash-3.2# echo "::memstat" | mdb -k
 ```
-**Expected outcome**
+**Expected outcome:**
 ```console
 Page Summary                Pages                MB  %Tot
 ------------     ----------------  ----------------  ----
