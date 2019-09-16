@@ -12,7 +12,9 @@
 **Access the ILOM using console**
 ```console
 -> load -source http://192.0.2.10:8888/Sun_System_Firmware-9_8_5_c-SPARC_T7-2.pkg
+```
 
+```
 NOTE: An upgrade takes several minutes to complete. ILOM
       will enter a special mode to load new firmware. No
       other tasks can be performed in ILOM until the
@@ -20,10 +22,11 @@ NOTE: An upgrade takes several minutes to complete. ILOM
 
 Are you sure you want to load the specified file (y/n)? y
 Preserve existing configuration (y/n)? y
-...............................................................................................................................................................................................................................................................................................................................................................
 
 Firmware update is complete.
 ILOM will now be restarted with the new firmware.
+```
 
+```console
 -> /sbin/reboot
 ```
