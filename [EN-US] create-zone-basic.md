@@ -1,27 +1,29 @@
 # How to create a zone on Solaris10
 
-**Create a directory**
+---
+
+Create a directory.
 ```console
 -bash-3.2# mkdir -p /export/zones
 ```
 
 ---
 
-**Ajust permission**
+Ajust permission.
 ```console
 -bash-3.2# chmod -R 700 /export/zones
 ```
 
 ---
 
-**Start zone creation**
+Start zone creation.
 ```console
 -bash-3.2# zonecfg -z zone1
 ```
 
 ---
 
-**Inside do console zone configuration**
+Inside do console zone configuration.
 ```bash
 create
 set zonepath=/export/zones
@@ -48,33 +50,32 @@ exit
 
 ---
 
-**List the zones created on your server**
+List the zones created on your server.
 ```console
 -bash-3.2# zoneadm list -cv
 ```
 
 ---
 
-**Start the installation**
+Start the installation.
 ```console
 -bash-3.2# zoneadm -z zone1 install 
 ```
 
 ---
 
-**After the install start/boot the zone**
+After the install start/boot the zone.
 ```console
 -bash-3.2# zoneadm -z zone1 boot 
 ```
 
 ---
 
-**User this command to access the zone in console mode**
+User this command to access the zone in console mode.
 ```console
 -bash-3.2# zlogin -C zone1
 ```
 
 ---
 
-**Once inside the zone type "~." to escape do zlogin -C**
-
+Once inside the zone type "~." to escape do zlogin -C

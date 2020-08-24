@@ -9,7 +9,7 @@
 
 ---
 
-**Access the ILOM using console**
+Access the ILOM using console.
 ```console
 -> load -source http://192.0.2.10:8888/Sun_System_Firmware-9_8_5_c-SPARC_T7-2.pkg
 ```
