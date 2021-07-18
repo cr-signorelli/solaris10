@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/sh
 
 echo "SSH server habilita root login e X11 forwarding"
 

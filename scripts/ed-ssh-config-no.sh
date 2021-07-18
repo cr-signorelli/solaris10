@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/sh
 
 echo "SSH server desabilita root login e X11 forwarding"
 
