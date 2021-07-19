@@ -1,7 +1,5 @@
 #!/bin/sh
 
-echo "SSH server habilita root login e X11 forwarding"
-
 ed - << EOF
 r /etc/ssh/sshd_config
 /PermitRootLogin/
